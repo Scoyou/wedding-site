@@ -8,6 +8,6 @@ storiesOf(
   'CountdownTimer',
   module
 )
-  .add('openConversations', () => {
+  .add('Countdown Timer', () => {
     return <CountdownTimer targetDate={EVENT_DATE}  />
   })
