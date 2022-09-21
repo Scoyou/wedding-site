@@ -24,17 +24,45 @@ input[type=submit]:hover {
 }
 
 .form-container {
-  display: flex;
-}
-
-.rsvp-form {
+  display: grid;
   height: 800px;
 }
 
+.rsvp-form {
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
 .side-info {
- margin-left: 1.2rem
+  grid-row: 1;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 .rsvp-header {
   border-bottom: 1px solid #000
+}
+
+#rsvp {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .rsvp-form {
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .side-info {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .form-container {
+    height: 600px;
+  }
 }

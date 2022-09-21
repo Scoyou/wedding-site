@@ -31,9 +31,10 @@
   color: #ebebeb;
   height: 500px;
   overflow: hidden;
-  background: linear-gradient(rgb(0,0,0,0), rgba(74, 73, 73, 0.8)), url('/public/marry-me-sign.jpeg'); 
-  background-size: cover;
+  background: linear-gradient(rgb(0,0,0,0), rgba(45, 44, 44, 0.8)), url('/public/marry-me-sign.jpeg'); 
+  background-size: auto;
   background-repeat: no-repeat;
+  background-position: center
 }
 
 .show-counter .countdown {
@@ -67,4 +68,11 @@
   margin: auto;
   color: white;
   text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .show-counter {
+    background-size: cover;
+  }
 }
