@@ -1,0 +1,22 @@
+.quote {
+  font-size: 28px;
+  color: rgb(179, 33, 33);
+}
+
+.quote-container {
+  height: 400px;
+  background: url('/public/quote-image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: fill;
+}
+
+.author {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .quote-container {
+    background-size: contain;
+  }
+}
