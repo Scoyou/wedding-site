@@ -22,7 +22,7 @@ const RsvpForm = () => {
     console.log(formState);
   };
   return (
-    <div>
+    <div id="rsvp">
       <span className="rsvp-header"><h1>RSVP</h1></span>
       <div className="form-container">
         <div className="rsvp-form">

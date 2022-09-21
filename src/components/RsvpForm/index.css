@@ -27,8 +27,8 @@ input[type=submit]:hover {
   display: flex;
 }
 
-.rspv-form {
-
+.rsvp-form {
+  height: 800px;
 }
 
 .side-info {
