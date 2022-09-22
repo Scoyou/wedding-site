@@ -45,8 +45,9 @@ input[type=submit]:hover {
 }
 
 #rsvp {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -64,5 +65,10 @@ input[type=submit]:hover {
 
   .form-container {
     height: 600px;
+  }
+
+  #rsvp {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
