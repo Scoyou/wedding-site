@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import "./index.css";
 
 const RsvpForm = () => {
+  const form = useRef();
+
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -17,15 +21,33 @@ const RsvpForm = () => {
   const handleAdditionalGuestsChange = (event) =>
     setFormState({ ...formState, additionalGuests: event.target.value });
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(formState);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAIL_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
+  console.log(form);
   return (
     <div id="rsvp">
-      <span className="rsvp-header"><h1>RSVP</h1></span>
+      <span className="rsvp-header">
+        <h1>RSVP</h1>
+      </span>
       <div className="form-container">
-        <div className="rsvp-form">
+        <form className="rsvp-form" onSubmit={handleSubmit} ref={form}>
           <label for="name">Name</label>
           <input
             type="text"
@@ -53,8 +75,8 @@ const RsvpForm = () => {
             onChange={handleAdditionalGuestsChange}
           />
 
-          <input type="submit" value="RSVP" onClick={handleSubmit} />
-        </div>
+          <input type="submit" value="RSVP" />
+        </form>
         <div className="side-info">
           <span>We hope to see you there!</span>
           <h2>East Canyon Resort</h2>
