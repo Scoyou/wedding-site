@@ -19,6 +19,7 @@ code {
   color: white;
   margin-right: 2rem;
   font-size: 1.25rem;
+  mix-blend-mode: difference;
 }
 
 .nav {
