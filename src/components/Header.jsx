@@ -1,11 +1,18 @@
 import React from "react";
-const Header = () => {
+const Header = ({ eventDate }) => {
   return (
     <div className="header">
       <div className="center">
         <h1 className="title">Save The Date!</h1>
         <h2 className="subtitle">Friday, October 13th 2023</h2>
-        <button className="rsvp-button" onClick={() => window.location.replace("/#rsvp")}>RSVP</button>
+        {!new Date() === eventDate && (
+          <button
+            className="rsvp-button"
+            onClick={() => window.location.replace("/#rsvp")}
+          >
+            RSVP
+          </button>
+        )}
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import Modal from "../Modal";
 
 import "./index.css";
 
-const RsvpForm = () => {
+const RsvpForm = ({ eventDate }) => {
   const form = useRef();
 
   const [showModal, setShowModal] = useState(false);
@@ -86,7 +86,11 @@ const RsvpForm = () => {
             onChange={handleAdditionalGuestsChange}
           />
 
-          <input type="submit" value="RSVP" />
+          <input
+            type="submit"
+            value="RSVP"
+            disabled={new Date() === eventDate}
+          />
         </form>
         <div className="side-info">
           <span>We hope to see you there!</span>
