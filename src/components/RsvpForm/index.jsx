@@ -73,7 +73,6 @@ const RsvpForm = () => {
             name="email"
             placeholder="Your Email.."
             onChange={handleEmailChange}
-            required
           />
 
           <label for="guests">Guests</label>
