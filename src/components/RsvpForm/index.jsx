@@ -68,7 +68,7 @@ const RsvpForm = ({ eventDate }) => {
             required
           />
 
-          <label for="email">Email</label>
+          <label>Email</label>
           <input
             type="text"
             id="email"
@@ -77,7 +77,7 @@ const RsvpForm = ({ eventDate }) => {
             onChange={handleEmailChange}
           />
 
-          <label for="guests">Guests</label>
+          <label>Guests</label>
           <input
             type="text"
             id="guests"
