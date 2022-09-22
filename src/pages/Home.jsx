@@ -14,7 +14,8 @@ const Home = () => {
   return(
     <div id="home">
       <Header />
-      <CountdownTimer targetDate={EVENT_DATE} title="The big day"/>
+      <CountdownTimer targetDate={EVENT_DATE} title="The big day" content="We're so excited to see you at our wedding! We can't think of a
+            better way to start our new journey than with all of you!"/>
       <QuoteContainer quote={QUOTE} author="William Shakespeare"/>
       <RegistrySection />
       <RsvpForm />

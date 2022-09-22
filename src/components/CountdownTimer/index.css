@@ -1,4 +1,15 @@
 
+.countdown-container {
+  overflow: hidden;
+  background: linear-gradient(rgb(0,0,0,0.4), rgba(45, 44, 44, 0.8)), url('/public/marry-me-sign.jpeg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: auto;
+  height: 100vh;
+  position: relative;
+}
+
 .expired-notice {
   text-align: center;
   padding: 2rem;
@@ -29,12 +40,6 @@
   border-radius: 0.25rem;
   text-decoration: none;
   color: #ebebeb;
-  height: 500px;
-  overflow: hidden;
-  background: linear-gradient(rgb(0,0,0,0), rgba(45, 44, 44, 0.8)), url('/public/marry-me-sign.jpeg'); 
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center
 }
 
 .show-counter .countdown {
@@ -70,9 +75,27 @@
   text-transform: uppercase;
 }
 
+.content {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  text-align: center;
+  transform: translate(50%, 50%);
+}
+
+.countdown-title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
 
 @media only screen and (max-width: 600px) {
-  .show-counter {
+  .countdown-container {
     background-size: cover;
+    max-width: auto;
+    height: 50vh;
+  }
+
+  .content {
+    transform: translate(50%, 20%);
   }
 }
