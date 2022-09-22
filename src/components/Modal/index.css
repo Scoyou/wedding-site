@@ -41,8 +41,13 @@
   font-size: 5rem;
 }
 
-@media only screen and (min-width: 600px) {
+
+@media only screen and (max-width: 600px) {
   .modal-content {
-    width: 100%;
+    width: 80%;
+  }
+
+  .modal-inner {
+    font-size: 1.5rem;
   }
 }
