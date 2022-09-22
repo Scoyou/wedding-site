@@ -39,8 +39,11 @@ const RsvpForm = () => {
           console.log(error.text);
         }
       );
+
+    //clears the form after sending the email
+    e.target.reset();
   };
-  console.log(form);
+
   return (
     <div id="rsvp">
       <span className="rsvp-header">
