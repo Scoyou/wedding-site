@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import CountdownTimer from '../components/CountdownTimer'
 import RsvpForm from '../components/RsvpForm';
 import QuoteContainer from '../components/QuoteContainer';
+import RegistrySection from '../components/RegistrySection';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Header />
       <CountdownTimer targetDate={EVENT_DATE} title="The big day"/>
       <QuoteContainer quote={QUOTE} author="William Shakespeare"/>
+      <RegistrySection />
       <RsvpForm />
     </div>
   )
