@@ -93,9 +93,15 @@ const RsvpForm = ({ eventDate }) => {
           />
         </form>
         <div className="side-info">
-          <span>We hope to see you there!</span>
-          <h2>East Canyon Resort</h2>
-          <h3>8896 UT-65, Morgan, UT 84050</h3>
+          <h4>We hope to see you there!</h4>
+
+          <p className="sub-text">
+            We're hoping to make this wedding an enjoyable one for everyone!
+            Please let us know if you need special accommodations, or have any
+            questions for us!
+          </p>
+          <h4>East Canyon Resort</h4>
+          <h5 className="sub-text">8896 UT-65, Morgan, UT 84050</h5>
         </div>
       </div>
     </div>
