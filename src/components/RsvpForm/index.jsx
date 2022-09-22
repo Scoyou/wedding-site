@@ -1,10 +1,13 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Modal from '../Modal'
 
 import "./index.css";
 
 const RsvpForm = () => {
   const form = useRef();
+
+  const [showModal, setShowModal] = useState(false)
 
   const [formState, setFormState] = useState({
     name: "",
@@ -42,22 +45,25 @@ const RsvpForm = () => {
 
     //clears the form after sending the email
     e.target.reset();
+    setShowModal(true)
   };
-
+  
   return (
     <div id="rsvp">
+      {showModal && <Modal setShowModal={setShowModal} />}
       <span className="rsvp-header">
         <h1>RSVP</h1>
       </span>
       <div className="form-container">
         <form className="rsvp-form" onSubmit={handleSubmit} ref={form}>
-          <label for="name">Name</label>
+          <label>Name</label>
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Your name.."
             onChange={handleNameChange}
+            required
           />
 
           <label for="email">Email</label>
@@ -67,6 +73,7 @@ const RsvpForm = () => {
             name="email"
             placeholder="Your Email.."
             onChange={handleEmailChange}
+            required
           />
 
           <label for="guests">Guests</label>
