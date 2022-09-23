@@ -32,13 +32,6 @@ code {
   background: rgba(8, 8, 8, 0.5);
 }
 
-.section-header {
-  border-bottom: 1px solid #FFF;
-  width: 100%;
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-}
-
 #gallery {
   margin: 2rem 2rem 2rem 2rem;
   overflow: hidden;

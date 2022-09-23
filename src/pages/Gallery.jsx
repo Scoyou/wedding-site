@@ -1,6 +1,7 @@
 import React from 'react';
 import {AdvancedImage} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
+import SectionHeader from '../components/SectionHeader'
 
 const Gallery = () => {
 
@@ -14,9 +15,9 @@ const Gallery = () => {
   
   return(
     <div id="gallery">
-       <h2 className="section-header">About Us</h2>
+       <SectionHeader title="About Us" />
        <span>content</span>
-       <h2 className="section-header">Photo Gallery</h2>
+       <SectionHeader title="Photo Gallery" />
        <span>content</span>
        <h2>Have more images of the wedding you'd like to share?</h2>
        <h3>email them to us at photos@scottandalisia.com</h3>
