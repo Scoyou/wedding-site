@@ -1,0 +1,38 @@
+
+.nav-item {
+  margin-right: 4rem;
+  float: right;
+  margin-top: 0.5rem;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  color: #a31616
+}
+
+.nav-title {
+  float: left;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  margin-left: 4rem;
+}
+
+.navbar.colorChange {
+  background: rgb(8, 8, 8); /* Fallback for older browsers without RGBA-support */
+  background: rgba(8, 8, 8, 0.5);
+  transition: 0.8s all ease
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 3rem;
+  font-size: 1.23rem;
+  font-family: 'Lusitana', Georgia, serif;
+  transition: 0.8s all ease
+}

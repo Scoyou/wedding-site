@@ -13,38 +13,6 @@ code {
     monospace;
 }
 
-.nav-item {
-  margin-right: 4rem;
-  float: right;
-  margin-top: 0.5rem;
-  color: #FFF;
-  text-decoration: none;
-}
-
-.nav-item:hover {
-  text-decoration: underline;
-}
-
-.nav-title {
-  float: left;
-  margin-top: 0.5rem;
-  text-transform: uppercase;
-  margin-left: 4rem;
-}
-
-.nav {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  background: rgb(8, 8, 8); /* Fallback for older browsers without RGBA-support */
-  background: rgba(8, 8, 8, 0.5);
-  height: 3rem;
-  font-size: 1.23rem;
-  font-family: 'Lusitana', Georgia, serif;
-}
-
 #gallery {
   margin: 2rem 2rem 2rem 2rem;
   overflow: hidden;
