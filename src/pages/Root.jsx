@@ -5,15 +5,16 @@ const Root = () => {
   return (
     <div className="root">
       <div className="nav">
+        <Link to="/gallery" className="nav-item">
+          Gallery
+        </Link>
+
         <Link
           to="/"
           className="nav-item"
           onClick={() => window.location.replace("/#home")}
         >
           Home
-        </Link>
-        <Link to="/gallery" className="nav-item">
-          Gallery
         </Link>
       </div>
       <Outlet />

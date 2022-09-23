@@ -18,17 +18,18 @@ code {
 .nav-item {
   color: white;
   margin-right: 2rem;
-  font-size: 1.25rem;
-  mix-blend-mode: difference;
+  float: right;
+  margin-top: 0.5rem;
 }
 
 .nav {
   position: fixed;
-  margin-top: 1rem;
-  margin-right: 4rem;
   right: 0;
+  left: 0;
+  top: 0;
   z-index: 1;
-  
+  background: rgb(8, 8, 8); /* Fallback for older browsers without RGBA-support */
+  background: rgba(8, 8, 8, 0.5);
 }
 
 .section-header {
