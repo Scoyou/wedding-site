@@ -8,7 +8,7 @@ const Header = ({ eventDate }) => {
         <span>Come celebrate the union of</span>
         <h1 className="title">Scott Young & Alisia Harry</h1>
         <h2 className="subtitle">Friday, October 13th 2023</h2>
-        {!(new Date() === eventDate) && (
+        {(new Date() !== eventDate) && (
           <button
             className="rsvp-button"
             onClick={() => window.location.replace("/#rsvp")}
