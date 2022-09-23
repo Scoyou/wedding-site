@@ -39,11 +39,15 @@
 
 @media only screen and (max-width: 600px) {
   .nav-title {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .nav-item {
-    margin-right: 2rem;
+    margin-right: 1rem;
     text-decoration: underline;
+  }
+
+  .navbar {
+    font-size: 1.15rem
   }
 }
