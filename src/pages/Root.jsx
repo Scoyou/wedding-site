@@ -5,6 +5,7 @@ const Root = () => {
   return (
     <div className="root">
       <div className="nav">
+        <span className="nav-title">Scott & Alisia</span>
         <Link to="/gallery" className="nav-item">
           Gallery
         </Link>
