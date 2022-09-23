@@ -36,3 +36,13 @@
   font-family: 'Lusitana', Georgia, serif;
   transition: 0.8s all ease
 }
+
+@media only screen and (max-width: 600px) {
+  .nav-title {
+    margin-left: 2rem;
+  }
+
+  .nav-item {
+    margin-right: 2rem;
+  }
+}
