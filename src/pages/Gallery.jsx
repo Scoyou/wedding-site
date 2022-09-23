@@ -1,17 +1,8 @@
 import React from "react";
-import { AdvancedImage } from "@cloudinary/react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import SectionHeader from "../components/SectionHeader";
 
 const Gallery = () => {
-  const cld = new Cloudinary({
-    cloud: {
-      cloudName: "dd73hevmu",
-    },
-  });
-
-  const myImage = cld.image("cld-sample-2");
-
   return (
     <div id="gallery">
       {process.env.NODE_ENV === "production" ? (
