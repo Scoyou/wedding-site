@@ -37,6 +37,49 @@
   transition: 0.8s all ease
 }
 
+/* Collapsed Nav */
+.collapsed-nav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(22, 22, 22);
+  overflow: hidden;
+}
+
+.collapsed-nav-item {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Lusitana', Georgia, serif;
+  text-decoration: none;
+}
+
+.collapsed-nav-hr {
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+ul {
+  margin-top: 4rem;
+}
+
+li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.close-btn {
+  position: relative;
+  float: right;
+  color: red;
+  height: 2rem;
+  width: 2rem;
+}
+
+/* Mobile */
+
 @media only screen and (max-width: 600px) {
   .nav-title {
     margin-left: 1rem;
