@@ -1,8 +1,8 @@
 import React from "react";
-import { Cloudinary } from "@cloudinary/url-gen";
 import SectionHeader from "../components/SectionHeader";
 
 const Gallery = () => {
+
   return (
     <div id="gallery">
       {process.env.NODE_ENV === "production" ? (
