@@ -44,5 +44,6 @@
 
   .nav-item {
     margin-right: 2rem;
+    text-decoration: underline;
   }
 }
