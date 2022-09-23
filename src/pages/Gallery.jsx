@@ -10,11 +10,16 @@ const Gallery = () => {
     }
   });
 
-  const myImage = cld.image('cld-sample'); 
+  const myImage = cld.image('cld-sample-2'); 
   
   return(
     <div id="gallery">
-       <AdvancedImage cldImg={myImage} />
+       <h2 className="section-header">About Us</h2>
+       <span>content</span>
+       <h2 className="section-header">Photo Gallery</h2>
+       <span>content</span>
+       <h2>Have more images of the wedding you'd like to share?</h2>
+       <h3>email them to us at photos@scottandalisia.com</h3>
     </div>
   )
 }
