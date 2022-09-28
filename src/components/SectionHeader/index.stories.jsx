@@ -8,5 +8,5 @@ storiesOf(
   module
 )
   .add('Section Header', () => {
-    return <SectionHeader />
+    return <SectionHeader title="Section Header"/>
   })
