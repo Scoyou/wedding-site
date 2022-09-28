@@ -4,5 +4,5 @@ import Modal from "./index";
 
 
 storiesOf("Modal", module).add("Modal", () => {
-  return <Modal />;
+  return <Modal toEmail="test@example.com"/>;
 });

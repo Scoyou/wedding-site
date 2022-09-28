@@ -14,7 +14,7 @@
   background-color: #FFF;
   margin: 15% auto; 
   padding: 20px;
-  border: 1px solid #888;
+  border: 5px solid #C41A1B;
   width: 30%; 
   color: black;
 }
@@ -36,9 +36,7 @@
 }
 
 .modal-inner {
-  display: flex;
   justify-content: center;
-  font-size: 5rem;
 }
 
 
