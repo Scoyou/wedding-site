@@ -2,11 +2,13 @@ import React, { useState, useRef } from "react";
 import Modal from "../Modal";
 import SectionHeader from "../SectionHeader";
 import { sendForm, sendConfirmation } from "../../services/emailJsService";
+import isEmail from "validator/lib/isEmail";
 import "./index.css";
 
 const RsvpForm = ({ eventDate }) => {
   const form = useRef();
 
+  const [emailError, setEmailError] = useState("");
   const [showModal, setShowModal] = useState(false);
 
   const [formState, setFormState] = useState({
@@ -27,17 +29,21 @@ const RsvpForm = ({ eventDate }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let templateParams = {
-      to_name: formState.name,
-      to_email: formState.email,
-    };
+    if (isEmail(formState.email)) {
+      let templateParams = {
+        to_name: formState.name,
+        to_email: formState.email,
+      };
 
-    sendForm(form.current);
-    sendConfirmation(templateParams);
+      sendForm(form.current);
+      sendConfirmation(templateParams);
 
-    //clears the form after sending the email
-    e.target.reset();
-    setShowModal(true);
+      //clears the form after sending the email
+      e.target.reset();
+      setShowModal(true);
+    } else {
+      setEmailError("Please enter a valid email address");
+    }
   };
 
   return (
@@ -48,33 +54,37 @@ const RsvpForm = ({ eventDate }) => {
       <SectionHeader title="RSVP" />
       <div className="form-container">
         <form className="rsvp-form" onSubmit={handleSubmit} ref={form}>
-          <label>Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your name.."
-            onChange={handleNameChange}
-            required
-          />
+          <div className="float-field">
+            <label>Name*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              onChange={handleNameChange}
+              required
+            />
+          </div>
 
-          <label>Email</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Your Email.."
-            onChange={handleEmailChange}
-          />
+          <div className="float-field">
+            <label>Email*</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              onChange={handleEmailChange}
+            />
+          </div>
+          {emailError && <span className="email-error">{emailError}</span>}
 
-          <label>Guests</label>
-          <input
-            type="text"
-            id="guests"
-            name="guests"
-            placeholder="Let us know who else is coming."
-            onChange={handleAdditionalGuestsChange}
-          />
+          <div className="float-field">
+            <label>Guests</label>
+            <input
+              type="text"
+              id="guests"
+              name="guests"
+              onChange={handleAdditionalGuestsChange}
+            />
+          </div>
 
           <input
             type="submit"

@@ -1,3 +1,22 @@
+.float-container {
+  border: solid 1px #ccc;
+  position: relative;
+  padding: 0 8px;
+}
+.float-container input {
+  border: none;
+  outline: 0;
+  font-size: 16px;
+  padding: 16px 0 10px;
+}
+
+label {
+  position: absolute;
+  color: #000;
+  transform: translate(0, 8px) scale(.75);
+  padding-bottom: 3px;
+}
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -6,6 +25,7 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  height: 3.30rem;
 }
 
 input[type=submit] {
@@ -23,6 +43,11 @@ input[type=submit]:hover {
   background-color: #000;
 }
 
+.email-error {
+  color: #C41A1B;
+  font-size: 1.3rem;
+}
+
 .form-container {
   display: grid;
   height: 500px;
@@ -32,7 +57,8 @@ input[type=submit]:hover {
 .rsvp-form {
   grid-row: 1;
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
+  width: 500px;
 }
 
 .side-info {
@@ -55,11 +81,12 @@ input[type=submit]:hover {
   color: rgb(164, 164, 164)
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .rsvp-form {
     grid-row: 1;
     grid-column-start: 1;
     grid-column-end: 4;
+    width: 100%;
   }
 
   .side-info {
