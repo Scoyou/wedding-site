@@ -42,7 +42,7 @@ const RsvpForm = ({ eventDate }) => {
 
   return (
     <div id="rsvp">
-      {showModal && <Modal setShowModal={setShowModal} />}
+      {showModal && <Modal setShowModal={setShowModal} toEmail={formState.email}/>}
       <SectionHeader title="RSVP" />
       <div className="form-container">
         <form className="rsvp-form" onSubmit={handleSubmit} ref={form}>
