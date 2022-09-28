@@ -1,9 +1,7 @@
 import React, { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
 import Modal from "../Modal";
-import SectionHeader from "../SectionHeader"
-
-
+import SectionHeader from "../SectionHeader";
+import { sendForm, sendConfirmation } from "../../services/emailJsService";
 import "./index.css";
 
 const RsvpForm = ({ eventDate }) => {
@@ -14,7 +12,7 @@ const RsvpForm = ({ eventDate }) => {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
-    additionalGuests: "",
+    additionalGuests: null,
   });
 
   const handleNameChange = (event) =>
@@ -29,21 +27,13 @@ const RsvpForm = ({ eventDate }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAIL_SERVICE_ID,
-        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_EMAIL_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    let templateParams = {
+      to_name: formState.name,
+      to_email: formState.email,
+    };
+
+    sendForm(form.current);
+    sendConfirmation(templateParams);
 
     //clears the form after sending the email
     e.target.reset();
