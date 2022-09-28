@@ -14,7 +14,7 @@ const RsvpForm = ({ eventDate }) => {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
-    additionalGuests: null,
+    additionalGuests: "",
   });
 
   const handleNameChange = (event) =>
