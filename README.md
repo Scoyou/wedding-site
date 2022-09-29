@@ -14,7 +14,7 @@ yarn start
 `yarn test`
 
 # Technologies Used
-* (React)[https://reactjs.org/]
-* (RTL)[https://testing-library.com/docs/react-testing-library/intro/]
-* (emailJs)[https://www.emailjs.com/]
-* (sendgrid)[https://sendgrid.com/]
+* [React](https://reactjs.org/)
+* [RTL](https://testing-library.com/docs/react-testing-library/intro/)
+* [emailJs](https://www.emailjs.com/)
+* [sendgrid](https://sendgrid.com/)
