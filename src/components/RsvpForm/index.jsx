@@ -72,6 +72,7 @@ const RsvpForm = ({ eventDate }) => {
               id="email"
               name="email"
               onChange={handleEmailChange}
+              required
             />
           </div>
           {emailError && <span className="email-error">{emailError}</span>}

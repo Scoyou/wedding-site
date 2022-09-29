@@ -7,8 +7,6 @@ import RegistrySection from "../components/RegistrySection";
 
 const Home = () => {
   const EVENT_DATE = new Date("October 13, 2023 15:00:00:000");
-  const QUOTE =
-    "Did my heart love till now? Forswear it, sight, For I ne'er saw true beauty till this night.";
 
   return (
     <div id="home">
@@ -38,7 +36,7 @@ const Home = () => {
         content="We're so excited to see you at our wedding! We can't think of a
             better way to start our new journey than with all of you!"
       />
-      <QuoteContainer quote={QUOTE} author="William Shakespeare" />
+      <QuoteContainer />
       <RegistrySection />
       <RsvpForm eventDate={EVENT_DATE} />
     </div>
