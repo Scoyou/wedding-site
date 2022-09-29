@@ -90,7 +90,7 @@ const RsvpForm = ({ eventDate }) => {
           <input
             type="submit"
             value="RSVP"
-            disabled={new Date() === eventDate}
+            disabled={new Date() > eventDate}
           />
         </form>
         <div className="side-info">

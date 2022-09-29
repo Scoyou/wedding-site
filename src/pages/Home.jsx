@@ -20,7 +20,7 @@ const Home = () => {
           day: "numeric",
         })}
         content={
-          new Date() !== EVENT_DATE && (
+          new Date() < EVENT_DATE && (
             <button
               className="rsvp-button"
               onClick={() => window.location.replace("/#rsvp")}
