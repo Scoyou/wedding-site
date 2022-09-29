@@ -1,5 +1,5 @@
 # Scott's wedding site
-A site created to host details of my upcoming wedding
+A site created to host details of my upcoming wedding. [Live site](www.scottandalisia.com)
 
 # Running
 To build site locally:
