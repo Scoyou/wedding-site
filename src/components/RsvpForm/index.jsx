@@ -55,7 +55,7 @@ const RsvpForm = ({ eventDate }) => {
       <div className="form-container">
         <form className="rsvp-form" onSubmit={handleSubmit} ref={form}>
           <div className="float-field">
-            <label for="name">Name*</label>
+            <label htmlFor="name">Name*</label>
             <input
               type="text"
               id="name"
@@ -66,7 +66,7 @@ const RsvpForm = ({ eventDate }) => {
           </div>
 
           <div className="float-field">
-            <label for="email">Email*</label>
+            <label htmlFor="email">Email*</label>
             <input
               type="text"
               id="email"
@@ -77,7 +77,7 @@ const RsvpForm = ({ eventDate }) => {
           {emailError && <span className="email-error">{emailError}</span>}
 
           <div className="float-field">
-            <label for="guests">Guests</label>
+            <label htmlFor="guests">Guests</label>
             <input
               type="text"
               id="guests"
