@@ -1,8 +1,11 @@
 import React from "react";
 import "./index.css";
-import SectionHeader from "../SectionHeader"
+import SectionHeader from "../SectionHeader";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const RegistrySection = () => {
+  const { width } = useWindowDimensions();
+
   return (
     <div id="registry">
       <SectionHeader title="Our Registry" />
@@ -18,9 +21,14 @@ const RegistrySection = () => {
             src={process.env.PUBLIC_URL + "/ring.jpeg"}
           />{" "}
         </a>
-        <span className="text">
-          View our registry by clicking on the image above.
-        </span>
+        <div className="middle">
+          <span className="text">View Registry</span>
+        </div>
+        {width < 600 && (
+          <span className="small-screen-text">
+            Click the image above to view our registry.
+          </span>
+        )}
       </div>
     </div>
   );
