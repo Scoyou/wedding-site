@@ -11,7 +11,7 @@ const RegistrySection = () => {
       <SectionHeader title="Our Registry" />
       <div className="image-container">
         <a
-          href="https://www.amazon.com/wedding/scott-young-alisia-harry--october-2023/registry/2KH88XQ0G6NR0"
+          href={process.env.REACT_APP_REGISTRY_HREF}
           target="_blank"
           rel="noreferrer"
         >

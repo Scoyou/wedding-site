@@ -6,7 +6,7 @@ import QuoteContainer from "../components/QuoteContainer";
 import RegistrySection from "../components/RegistrySection";
 
 const Home = () => {
-  const EVENT_DATE = new Date("October 13, 2023 15:00:00:000");
+  const EVENT_DATE = new Date(process.env.REACT_APP_EVENT_DATE);
 
   return (
     <div id="home">
