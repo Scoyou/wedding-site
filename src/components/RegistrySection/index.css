@@ -9,6 +9,11 @@
   text-align: center;
 }
 
+.image-container:hover {
+  transform: scale(1.02);
+  transition: width 0.3s, height 0.3s, transform 0.3s;
+}
+
 .img {
   width: 100%;
   height: auto;

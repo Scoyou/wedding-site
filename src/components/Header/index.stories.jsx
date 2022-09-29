@@ -2,6 +2,8 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Header from "./index";
 
+const EVENT_DATE = new Date("October 13, 2023 15:00:00:000");
+
 storiesOf("Header", module).add("Header", () => {
   return (
     <Header
