@@ -14,7 +14,7 @@
   background-color: #FFF;
   margin: 15% auto; 
   padding: 20px;
-  border: 5px solid #C41A1B;
+  border: 5px solid var(--main-red);
   width: 30%; 
   color: black;
 }

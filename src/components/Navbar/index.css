@@ -9,7 +9,7 @@
 
 .nav-item:hover {
   text-decoration: underline;
-  color: #C41A1B
+  color: var(--main-red);
 }
 
 .nav-title {

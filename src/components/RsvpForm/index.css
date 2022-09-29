@@ -30,7 +30,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #C41A1B;
+  background-color: var(--main-red);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -44,7 +44,7 @@ input[type=submit]:hover {
 }
 
 .email-error {
-  color: #C41A1B;
+  color: var(--main-red);
   font-size: 1.3rem;
 }
 
