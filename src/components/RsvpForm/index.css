@@ -12,20 +12,21 @@
 
 label {
   position: absolute;
-  color: #000;
+  color: rgb(40, 39, 39);
   transform: translate(0, 8px) scale(.75);
   padding-bottom: 3px;
 }
 
 input[type=text], select {
   width: 100%;
-  padding: 12px 20px;
+  padding: 20px 20px 4px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   height: 3.30rem;
+  font-size: 1.25rem;
 }
 
 input[type=submit] {
