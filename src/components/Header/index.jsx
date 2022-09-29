@@ -1,21 +1,16 @@
 import React from "react";
-import './index.css'
+import "./index.css";
 
-const Header = ({ eventDate }) => {
+const Header = ({ intro, title, subTitle, content }) => {
   return (
     <div className="header">
       <div className="center">
-        <span>Come celebrate the union of</span>
-        <h1 className="title">Scott Young & Alisia Harry</h1>
-        <h2 className="subtitle">Friday, October 13th 2023</h2>
-        {(new Date() !== eventDate) && (
-          <button
-            className="rsvp-button"
-            onClick={() => window.location.replace("/#rsvp")}
-          >
-            RSVP
-          </button>
-        )}
+        {intro && <span>{intro}</span>}
+        <h1 className="title">{title}</h1>
+        <h2 className="subtitle">
+          {subTitle}
+        </h2>
+        {content}
       </div>
     </div>
   );

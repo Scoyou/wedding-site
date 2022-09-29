@@ -12,7 +12,26 @@ const Home = () => {
 
   return (
     <div id="home">
-      <Header eventDate={EVENT_DATE}/>
+      <Header
+        intro="Come celebrate the union of:"
+        title="Scott Young & Alisia Harry"
+        subTitle={EVENT_DATE.toLocaleDateString("en-us", {
+          weekday: "long",
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        })}
+        content={
+          new Date() !== EVENT_DATE && (
+            <button
+              className="rsvp-button"
+              onClick={() => window.location.replace("/#rsvp")}
+            >
+              RSVP
+            </button>
+          )
+        }
+      />
       <CountdownTimer
         targetDate={EVENT_DATE}
         title="The big day"
@@ -21,7 +40,7 @@ const Home = () => {
       />
       <QuoteContainer quote={QUOTE} author="William Shakespeare" />
       <RegistrySection />
-      <RsvpForm eventDate={EVENT_DATE}/>
+      <RsvpForm eventDate={EVENT_DATE} />
     </div>
   );
 };
