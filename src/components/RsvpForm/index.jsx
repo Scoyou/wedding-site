@@ -100,8 +100,6 @@ const RsvpForm = ({ eventDate }) => {
             Please let us know if you need special accommodations, or have any
             questions for us!
           </p>
-          <h3>East Canyon Resort</h3>
-          <h4 className="sub-text">8896 UT-65, Morgan, UT 84050</h4>
         </div>
       </div>
     </div>
