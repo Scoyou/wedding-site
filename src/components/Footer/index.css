@@ -1,17 +1,16 @@
 .footer {
   height: auto;
   background-color: var(--main-red);
-  width: 100%;
+  width: 100vw;
   font-size: 1rem;
   line-height: 100px;
-}
-
-.footer ul {
-  list-style: none;
+  opacity: .9;
+  padding-left: 1rem;
 }
 
 @media only screen and (max-width: 700px) {
   .footer {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    padding-left: .40rem;
   }
 }

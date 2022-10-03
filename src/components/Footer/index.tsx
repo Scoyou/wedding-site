@@ -4,9 +4,7 @@ import './index.css'
 const Footer = () => {
   return (
     <div className="footer">
-      <ul>
-        <li>Contact us with any questions at rsvp@scottandalisia.com</li>
-      </ul>
+      Contact us with any questions at rsvp@scottandalisia.com
     </div>
   )
 }
