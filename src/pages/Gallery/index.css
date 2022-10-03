@@ -1,0 +1,7 @@
+.more-images-text a{
+  color: #fff;
+}
+
+.more-images-text a:hover{
+  color: var(--main-red);
+}
