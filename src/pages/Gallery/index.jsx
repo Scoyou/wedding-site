@@ -2,14 +2,16 @@ import React from 'react'
 import SectionHeader from '../../components/SectionHeader'
 import GalleryDisplay from '../../components/GalleryDisplay'
 
-const Gallery = () => {
-  const importImages = (r) => {
-    return r.keys().map(r)
-  }
+// Exports to use in GalleryDisplay story
+export const importImages = (r) => {
+  return r.keys().map(r)
+}
 
-  const listOfImages = importImages(
-    require.context('./images/', false, /\.(png|jpe?g|svg)$/),
-  )
+export const listOfImages = importImages(
+  require.context('./images/', false, /\.(png|jpe?g|svg)$/),
+)
+
+const Gallery = () => {
   return (
     <div id="gallery">
       {process.env.NODE_ENV === 'production' ? (
