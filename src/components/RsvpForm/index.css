@@ -13,11 +13,12 @@
 label {
   position: absolute;
   color: rgb(40, 39, 39);
-  transform: translate(0, 8px) scale(.75);
+  transform: translate(0, 8px) scale(0.75);
   padding-bottom: 3px;
 }
 
-input[type=text], select {
+input[type='text'],
+select {
   width: 100%;
   padding: 20px 20px 4px 20px;
   margin: 8px 0;
@@ -25,11 +26,11 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  height: 3.30rem;
+  height: 3.3rem;
   font-size: 1.25rem;
 }
 
-input[type=submit] {
+input[type='submit'] {
   width: 100%;
   background-color: var(--main-red);
   color: white;
@@ -40,7 +41,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type='submit']:hover {
   background-color: #000;
 }
 
@@ -69,7 +70,7 @@ input[type=submit]:hover {
 }
 
 .rsvp-header {
-  border-bottom: 1px solid #FFF
+  border-bottom: 1px solid #fff;
 }
 
 #rsvp {
@@ -79,7 +80,7 @@ input[type=submit]:hover {
 }
 
 .sub-text {
-  color: rgb(164, 164, 164)
+  color: rgb(164, 164, 164);
 }
 
 @media only screen and (max-width: 700px) {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const DateTimeDisplay = ({ value, type, isDanger }) => {
   return (
@@ -6,7 +6,7 @@ const DateTimeDisplay = ({ value, type, isDanger }) => {
       <p>{value}</p>
       <span>{type}</span>
     </div>
-  );
-};
+  )
+}
 
-export default DateTimeDisplay;
+export default DateTimeDisplay

@@ -1,15 +1,14 @@
-import React from "react";
-import SectionHeader from "../components/SectionHeader";
+import React from 'react'
+import SectionHeader from '../components/SectionHeader'
 
 const Gallery = () => {
-
   return (
     <div id="gallery">
-      {process.env.NODE_ENV === "production" ? (
+      {process.env.NODE_ENV === 'production' ? (
         <SectionHeader title="Coming Soon!" />
       ) : (
         <>
-          {" "}
+          {' '}
           <SectionHeader title="About Us" />
           <span>content</span>
           <SectionHeader title="Photo Gallery" />
@@ -19,7 +18,7 @@ const Gallery = () => {
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Gallery;
+export default Gallery

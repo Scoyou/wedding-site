@@ -1,11 +1,10 @@
-import {render, screen} from '@testing-library/react'
-import Modal from "./index"
+import { render, screen } from '@testing-library/react'
+import Modal from './index'
 
 const defaults = {
   setShowModal: true,
   toEmail: 'test@example.com',
 }
-
 
 describe('countdown timer', () => {
   beforeEach(() => {
@@ -14,13 +13,11 @@ describe('countdown timer', () => {
 
   it('renders', () => {
     expect(
-      screen.getByRole('heading', {name: "Thank you for your RSVP!"})
+      screen.getByRole('heading', { name: 'Thank you for your RSVP!' }),
     ).toBeInTheDocument()
   })
 
   it('shows correct email', () => {
-    expect(
-      screen.getByText(/test@example.com/)
-    ).toBeInTheDocument()
+    expect(screen.getByText(/test@example.com/)).toBeInTheDocument()
   })
 })

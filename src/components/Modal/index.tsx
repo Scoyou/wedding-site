@@ -1,5 +1,5 @@
-import React from "react";
-import "./index.css";
+import React from 'react'
+import './index.css'
 
 export type Props = {
   setShowModal: (i: boolean) => null
@@ -19,7 +19,7 @@ const Modal = (props: Props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Modal;
+export default Modal

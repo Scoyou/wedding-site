@@ -1,9 +1,8 @@
-
 .nav-item {
   margin-right: 4rem;
   float: right;
   margin-top: 0.5rem;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -20,9 +19,13 @@
 }
 
 .navbar.colorChange {
-  background: rgb(8, 8, 8); /* Fallback for older browsers without RGBA-support */
+  background: rgb(
+    8,
+    8,
+    8
+  ); /* Fallback for older browsers without RGBA-support */
   background: rgba(8, 8, 8, 0.5);
-  transition: 0.8s all ease
+  transition: 0.8s all ease;
 }
 
 .navbar {
@@ -34,7 +37,7 @@
   height: 3rem;
   font-size: 1.23rem;
   font-family: 'Lusitana', Georgia, serif;
-  transition: 0.8s all ease
+  transition: 0.8s all ease;
 }
 
 /* Collapsed Nav */
@@ -91,6 +94,6 @@ li {
   }
 
   .navbar {
-    font-size: 1.15rem
+    font-size: 1.15rem;
   }
 }

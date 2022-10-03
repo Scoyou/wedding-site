@@ -1,6 +1,5 @@
-import {render, screen} from '@testing-library/react'
-import RegistrySection from "./index.jsx"
-
+import { render, screen } from '@testing-library/react'
+import RegistrySection from './index.jsx'
 
 describe('countdown timer', () => {
   beforeEach(() => {
@@ -8,9 +7,6 @@ describe('countdown timer', () => {
   })
 
   it('renders', () => {
-    expect(
-      screen.getByText("View Registry")
-    ).toBeInTheDocument()
+    expect(screen.getByText('View Registry')).toBeInTheDocument()
   })
-
 })

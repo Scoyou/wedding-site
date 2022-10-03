@@ -1,10 +1,10 @@
-import React from "react";
-import "./index.css";
-import SectionHeader from "../SectionHeader";
-import useWindowDimensions from "../../hooks/useWindowDimensions";
+import React from 'react'
+import './index.css'
+import SectionHeader from '../SectionHeader'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 const RegistrySection = () => {
-  const { width } = useWindowDimensions();
+  const { width } = useWindowDimensions()
 
   return (
     <div id="registry">
@@ -18,8 +18,8 @@ const RegistrySection = () => {
           <img
             alt="Alisia's ring"
             className="img"
-            src={process.env.PUBLIC_URL + "/ring.jpeg"}
-          />{" "}
+            src={process.env.PUBLIC_URL + '/ring.jpeg'}
+          />{' '}
         </a>
         <div className="middle">
           <span className="text">View Registry</span>
@@ -31,7 +31,7 @@ const RegistrySection = () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RegistrySection;
+export default RegistrySection

@@ -1,8 +1,8 @@
-import {render, screen} from '@testing-library/react'
-import SectionHeader from "./index.jsx"
+import { render, screen } from '@testing-library/react'
+import SectionHeader from './index.jsx'
 
 const defaults = {
-  title: 'Section Header'
+  title: 'Section Header',
 }
 
 describe('Section header', () => {
@@ -12,7 +12,7 @@ describe('Section header', () => {
 
   it('renders', () => {
     expect(
-      screen.getByRole("heading", {name: defaults.title})
+      screen.getByRole('heading', { name: defaults.title }),
     ).toBeInTheDocument()
   })
 })

@@ -1,7 +1,7 @@
-
 .countdown-container {
   overflow: hidden;
-  background: linear-gradient(rgb(0,0,0,0.4), rgba(45, 44, 44, 0.8)), url('/public/marry-me-sign.jpeg'); 
+  background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(45, 44, 44, 0.8)),
+    url('/public/marry-me-sign.jpeg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

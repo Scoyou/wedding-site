@@ -1,10 +1,8 @@
-import React from "react";
-import "./index.css";
+import React from 'react'
+import './index.css'
 
 const QuoteContainer = () => {
-  return (
-    <div className="quote-container"></div>
-  );
-};
+  return <div className="quote-container"></div>
+}
 
-export default QuoteContainer;
+export default QuoteContainer

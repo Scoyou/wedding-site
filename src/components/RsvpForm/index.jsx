@@ -1,50 +1,50 @@
-import React, { useState, useRef } from "react";
-import Modal from "../Modal";
-import SectionHeader from "../SectionHeader";
-import { sendForm, sendConfirmation } from "../../services/emailJsService";
-import isEmail from "validator/lib/isEmail";
-import "./index.css";
+import React, { useState, useRef } from 'react'
+import Modal from '../Modal'
+import SectionHeader from '../SectionHeader'
+import { sendForm, sendConfirmation } from '../../services/emailJsService'
+import isEmail from 'validator/lib/isEmail'
+import './index.css'
 
 const RsvpForm = ({ eventDate }) => {
-  const form = useRef();
+  const form = useRef()
 
-  const [emailError, setEmailError] = useState("");
-  const [showModal, setShowModal] = useState(false);
+  const [emailError, setEmailError] = useState('')
+  const [showModal, setShowModal] = useState(false)
 
   const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    additionalGuests: "",
-  });
+    name: '',
+    email: '',
+    additionalGuests: '',
+  })
 
   const handleNameChange = (event) =>
-    setFormState({ ...formState, name: event.target.value });
+    setFormState({ ...formState, name: event.target.value })
 
   const handleEmailChange = (event) =>
-    setFormState({ ...formState, email: event.target.value });
+    setFormState({ ...formState, email: event.target.value })
 
   const handleAdditionalGuestsChange = (event) =>
-    setFormState({ ...formState, additionalGuests: event.target.value });
+    setFormState({ ...formState, additionalGuests: event.target.value })
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     if (isEmail(formState.email)) {
       let templateParams = {
         to_name: formState.name,
         to_email: formState.email,
-      };
+      }
 
-      sendForm(form.current);
-      sendConfirmation(templateParams);
+      sendForm(form.current)
+      sendConfirmation(templateParams)
 
       //clears the form after sending the email
-      e.target.reset();
-      setShowModal(true);
+      e.target.reset()
+      setShowModal(true)
     } else {
-      setEmailError("Please enter a valid email address");
+      setEmailError('Please enter a valid email address')
     }
-  };
+  }
 
   return (
     <div id="rsvp">
@@ -87,11 +87,7 @@ const RsvpForm = ({ eventDate }) => {
             />
           </div>
 
-          <input
-            type="submit"
-            value="RSVP"
-            disabled={new Date() > eventDate}
-          />
+          <input type="submit" value="RSVP" disabled={new Date() > eventDate} />
         </form>
         <div className="side-info">
           <h3>We hope to see you there!</h3>
@@ -104,7 +100,7 @@ const RsvpForm = ({ eventDate }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RsvpForm;
+export default RsvpForm
