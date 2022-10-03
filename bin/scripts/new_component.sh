@@ -4,6 +4,7 @@ mkdir src/components/$1
 touch src/components/$1/index.css
 touch src/components/$1/index.tsx
 touch src/components/$1/index.stories.tsx
+touch src/components/$1/index.test.tsx
 
 if [ -z "$2" ]
 then
@@ -52,4 +53,17 @@ export default $1" >> src/components/$1/index.tsx
   });" >> src/components/$1/index.stories.tsx
 fi
 
-  
+echo "import React from 'react'
+import { render, screen } from '@testing-library/react'
+import $1 from './index'
+
+describe('$1', () => {
+  beforeEach(() => {
+    render(<$1 />)
+  })
+
+  it('renders', () => {
+    
+  })
+})" >> src/components/$1/index.test.tsx
+
