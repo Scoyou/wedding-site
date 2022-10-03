@@ -1,4 +1,4 @@
 npx prettier --write .
 git add .
-git commit -m 'prettier fixes'
+git commit --amend --no-edit
 git push origin main
