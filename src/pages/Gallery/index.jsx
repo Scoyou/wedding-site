@@ -21,10 +21,14 @@ const Gallery = () => {
           {' '}
           <SectionHeader title="About Us" />
           <span>content</span>
-          <SectionHeader title="Photo Gallery" />
+          <SectionHeader title="Photo Gallery" />p
           <GalleryDisplay images={listOfImages} />
           <h2>Have more images of the wedding you'd like to share?</h2>
-          <h3>email them to us at photos@scottandalisia.com</h3>
+          <h3>
+            <a href={`mailto:${process.env.REACT_APP_RSVP_EMAIL}`}>
+              Email them to us!
+            </a>
+          </h3>
         </>
       )}
     </div>
