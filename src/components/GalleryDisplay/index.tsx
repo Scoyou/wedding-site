@@ -6,7 +6,6 @@ type Props = {
 }
 
 const GalleryDisplay = (props: Props) => {
-  console.log(props.images)
   return (
     <div className="gallery-display">
       {props.images.map((image, index) => (

@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionHeader from '../components/SectionHeader'
-import GalleryDisplay from '../components/GalleryDisplay'
+import SectionHeader from '../../components/SectionHeader'
+import GalleryDisplay from '../../components/GalleryDisplay'
 
 const Gallery = () => {
   const importImages = (r) => {
@@ -8,7 +8,7 @@ const Gallery = () => {
   }
 
   const listOfImages = importImages(
-    require.context('./gallery-images/', false, /\.(png|jpe?g|svg)$/),
+    require.context('./images/', false, /\.(png|jpe?g|svg)$/),
   )
   return (
     <div id="gallery">
