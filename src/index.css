@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'OpenSans';
+  font-family: 'Open Sans';
   src: url('../public/OpenSans-VariableFont_wdth,wght.ttf');
 }
 
 body {
   margin: 0;
-  font-family: 'OpenSans';
+  font-family: 'Open Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(22, 22, 22);
