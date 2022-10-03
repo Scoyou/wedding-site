@@ -9,6 +9,7 @@ if [ -z "$2" ]
 then
   # Fill index.jsx
   echo "import React from 'react'
+  import './index.css'
 
   const $1 = () => {
     return(
@@ -28,6 +29,7 @@ then
   });" >> src/components/$1/index.stories.tsx
 else
   echo "import React from 'react'
+  import './index.css'
 
   type Props ={
     $2
