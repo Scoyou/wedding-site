@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 
 export type Props = {
-  setShowModal: (boolean) => null
+  setShowModal: (i: boolean) => null
   toEmail: string
 }
 
