@@ -1,12 +1,12 @@
 .countdown-container {
   overflow: hidden;
   background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(45, 44, 44, 0.8)),
-    url('/public/marry-me-sign.jpeg');
+    url('/public/weddingmugs.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   max-width: auto;
-  height: 100vh;
+  height: 500px;
   position: relative;
 }
 

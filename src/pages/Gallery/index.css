@@ -1,7 +1,7 @@
-.more-images-text a{
+.more-images-text a {
   color: #fff;
 }
 
-.more-images-text a:hover{
+.more-images-text a:hover {
   color: var(--main-red);
 }
