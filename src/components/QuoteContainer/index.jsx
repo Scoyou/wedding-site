@@ -10,7 +10,7 @@ const QuoteContainer = () => {
         alt="Shakespeare quote"
       />
       <img
-        className="quote-image"
+        className="quote-image marry-me"
         src={process.env.PUBLIC_URL + '/marry-me-sign.jpeg'}
         alt="Marry me sign"
       />
