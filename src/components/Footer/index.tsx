@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 
 const Footer = () => {
-  return(
+  return (
     <div className="footer">
       <ul>
         <li>Contact us with any questions at rsvp@scottandalisia.com</li>
