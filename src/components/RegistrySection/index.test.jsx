@@ -9,7 +9,7 @@ describe('countdown timer', () => {
 
   it('renders', () => {
     expect(
-      screen.getByText("View our registry by clicking on the image above.")
+      screen.getByText("View Registry")
     ).toBeInTheDocument()
   })
 

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./index.css";
 
-const Header = ({ intro, title, subTitle, content }) => {
+export type Props = {
+  intro: ReactNode
+  title: ReactNode
+  subTitle: ReactNode
+  content: ReactNode
+}
+
+const Header = (props: Props) => {
+  const { intro, title, subTitle, content } = props;
+
   return (
     <div className="header">
       <div className="center">

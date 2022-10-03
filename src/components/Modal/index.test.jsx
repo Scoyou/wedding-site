@@ -1,5 +1,5 @@
 import {render, screen} from '@testing-library/react'
-import Modal from "./index.jsx"
+import Modal from "./index"
 
 const defaults = {
   setShowModal: true,

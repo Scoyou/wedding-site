@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Header from "./index.jsx";
+import Header from "./index";
 
 const defaults = {
   intro: "loren ipsum dolar",
