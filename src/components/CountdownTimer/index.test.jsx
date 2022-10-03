@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import CountdownTimer from './index.jsx'
+import CountdownTimer from './index'
 
 const defaults = {
   targetDate: new Date('October 13, 2023 15:00:00:000'),

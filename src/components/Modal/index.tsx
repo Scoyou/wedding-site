@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 
 export type Props = {
-  setShowModal: (i: boolean) => null
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>
   toEmail: string
 }
 

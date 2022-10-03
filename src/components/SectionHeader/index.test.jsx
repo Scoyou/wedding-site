@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import SectionHeader from './index.jsx'
+import SectionHeader from './index'
 
 const defaults = {
   title: 'Section Header',
