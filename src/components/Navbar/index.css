@@ -4,6 +4,7 @@
   margin-top: 0.5rem;
   color: #fff;
   text-decoration: none;
+  padding-top: 0.5rem;
 }
 
 .nav-item:hover {
@@ -16,6 +17,7 @@
   margin-top: 0.5rem;
   text-transform: uppercase;
   margin-left: 4rem;
+  padding-top: 0.5rem;
 }
 
 .navbar.colorChange {
@@ -30,9 +32,8 @@
 
 .navbar {
   position: fixed;
-  right: 0;
-  left: 0;
   top: 0;
+  width: 100%;
   z-index: 1;
   height: 3rem;
   font-size: 1.23rem;
