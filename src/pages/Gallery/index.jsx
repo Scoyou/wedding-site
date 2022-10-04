@@ -9,7 +9,7 @@ export const importImages = (r) => {
 }
 
 export const listOfImages = importImages(
-  require.context('./images/', false, /\.(png|jpe?g|svg)$/),
+  require.context('./images/', false, /\.(png|jpe?g|svg|webp)$/),
 )
 
 const Gallery = () => {

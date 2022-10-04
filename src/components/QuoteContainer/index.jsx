@@ -12,7 +12,7 @@ const QuoteContainer = () => {
       />
       <img
         className="quote-image marry-me"
-        src={process.env.PUBLIC_URL + '/DSC_0199.jpg'}
+        src={process.env.PUBLIC_URL + '/DSC_0199.webp'}
         alt="Marry me sign"
         loading="lazy"
       />

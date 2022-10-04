@@ -1,7 +1,7 @@
 .countdown-container {
   overflow: hidden;
   background: linear-gradient(rgb(0, 0, 0, 0.4), rgba(45, 44, 44, 0.8)),
-    url('/public/DSC_0066.jpg');
+    url('/public/DSC_0066.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
