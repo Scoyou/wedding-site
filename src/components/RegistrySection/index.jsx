@@ -18,7 +18,7 @@ const RegistrySection = () => {
           <img
             alt="Alisia's ring"
             className="img"
-            src={process.env.PUBLIC_URL + '/ring.jpeg'}
+            src={process.env.PUBLIC_URL + '/ring.webp'}
           />{' '}
         </a>
         <div className="middle">

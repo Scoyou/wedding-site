@@ -6,7 +6,7 @@ const QuoteContainer = () => {
     <div className="quote-container" data-testid="quote-container">
       <img
         className="quote-image"
-        src={process.env.PUBLIC_URL + '/quote-image.png'}
+        src={process.env.PUBLIC_URL + '/quote-image.webp'}
         alt="Shakespeare quote"
         loading="lazy"
       />

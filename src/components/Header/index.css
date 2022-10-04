@@ -5,7 +5,7 @@
   padding-top: 100px;
   color: white;
   overflow: hidden;
-  background: var(--background-gradient), url('/public/header-img.jpeg');
+  background: var(--background-gradient), url('/public/header-img.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
