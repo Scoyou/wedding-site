@@ -18,11 +18,6 @@ code {
     monospace;
 }
 
-#gallery {
-  margin: 2rem 2rem 2rem 2rem;
-  overflow: hidden;
-}
-
 :root {
   --main-red: #a71717;
   --background-gradient: linear-gradient(

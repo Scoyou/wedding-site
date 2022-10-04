@@ -1,7 +1,25 @@
+#gallery {
+  margin: 4rem 2rem 2rem 2rem;
+  overflow: hidden;
+}
+
 .more-images-text a {
   color: #fff;
 }
 
 .more-images-text a:hover {
   color: var(--main-red);
+}
+
+.photo-credit {
+  margin-top: 5px;
+}
+
+.logo-image {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.logo-image:hover {
+  filter: hue-rotate(90deg);
 }
