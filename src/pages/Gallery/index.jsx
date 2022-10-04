@@ -13,6 +13,8 @@ export const listOfImages = importImages(
 )
 
 const Gallery = () => {
+  const EVENT_DATE = new Date(process.env.REACT_APP_EVENT_DATE)
+
   return (
     <div id="gallery">
       <SectionHeader title="Photo Gallery" />
@@ -39,12 +41,14 @@ const Gallery = () => {
             />
           </a>
         </span>
-        <p>
-          Have images of the wedding you'd like to share?{' '}
-          <a href={`mailto:${process.env.REACT_APP_RSVP_EMAIL}`}>
-            Email them to us!
-          </a>
-        </p>
+        {new Date() > EVENT_DATE && (
+          <p>
+            Have images of the wedding you'd like to share?{' '}
+            <a href={`mailto:${process.env.REACT_APP_RSVP_EMAIL}`}>
+              Email them to us!
+            </a>
+          </p>
+        )}
       </div>
     </div>
   )
