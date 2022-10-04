@@ -20,14 +20,19 @@ const Gallery = () => {
       <SectionHeader title="Photo Gallery" />
       <GalleryDisplay images={listOfImages} />
       <div className="more-images-text">
+        <span style={{ float: 'right' }}>
+          <a href="https://www.facebook.com/media/set/?vanity=shennilleshereephotography&set=a.601797878060514">
+            View full album
+          </a>
+        </span>
         <span className="photo-credit">
           Photo Credit: Shennile Sheree Photography{' '}
           <a href="https://www.facebook.com/shennilleshereephotography">
             <img
               src={process.env.PUBLIC_URL + '/facebooklogo.png'}
               alt="facebook logo"
-              height="30"
-              width="30"
+              height="25"
+              width="25"
               className="logo-image"
               loading="lazy"
             />
@@ -36,8 +41,8 @@ const Gallery = () => {
             <img
               src={process.env.PUBLIC_URL + '/instagramlogo.png'}
               alt="instagram logo"
-              height="30"
-              width="30"
+              height="25"
+              width="25"
               className="logo-image"
               loading="lazy"
             />
