@@ -8,11 +8,13 @@ const QuoteContainer = () => {
         className="quote-image"
         src={process.env.PUBLIC_URL + '/quote-image.png'}
         alt="Shakespeare quote"
+        loading="lazy"
       />
       <img
         className="quote-image marry-me"
         src={process.env.PUBLIC_URL + '/DSC_0199.jpg'}
         alt="Marry me sign"
+        loading="lazy"
       />
     </div>
   )

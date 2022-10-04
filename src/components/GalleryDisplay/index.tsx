@@ -14,6 +14,7 @@ const GalleryDisplay = (props: Props) => {
           src={image}
           alt="scott and alisia engagement"
           className="gallery-image"
+          loading="lazy"
         />
       ))}
     </div>
