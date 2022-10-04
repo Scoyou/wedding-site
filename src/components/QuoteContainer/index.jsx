@@ -13,7 +13,7 @@ const QuoteContainer = () => {
       <img
         className="quote-image"
         src={process.env.PUBLIC_URL + '/DSC_0199.webp'}
-        alt="Engagement photo"
+        alt="Engagement"
         loading="lazy"
       />
     </div>
