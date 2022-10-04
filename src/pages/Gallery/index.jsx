@@ -29,6 +29,7 @@ const Gallery = () => {
               height="30"
               width="30"
               className="logo-image"
+              loading="lazy"
             />
           </a>
           <a href="https://www.instagram.com/shennille_sheree_photography/">
@@ -38,6 +39,7 @@ const Gallery = () => {
               height="30"
               width="30"
               className="logo-image"
+              loading="lazy"
             />
           </a>
         </span>
