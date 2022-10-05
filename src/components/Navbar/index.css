@@ -18,6 +18,8 @@
   text-transform: uppercase;
   margin-left: 4rem;
   padding-top: 0.5rem;
+  color: white;
+  text-decoration: none;
 }
 
 .navbar.colorChange {

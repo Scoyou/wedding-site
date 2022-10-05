@@ -23,7 +23,9 @@ const Navbar = () => {
       {showCollapsedNav && (
         <CollapsedNav setShowCollapsedNav={setShowCollapsedNav} />
       )}
-      <span className="nav-title">Scott & Alisia</span>
+      <Link to="/" onClick={() => window.location.replace('#top')}>
+        <span className="nav-title">Scott & Alisia</span>
+      </Link>
       {width < 600 ? (
         <img
           alt="nav menu"
@@ -35,14 +37,18 @@ const Navbar = () => {
         />
       ) : (
         <>
-          <Link to="/gallery" className="nav-item">
+          <Link
+            to="/gallery"
+            className="nav-item"
+            onClick={() => window.location.replace('#top')}
+          >
             Gallery
           </Link>
 
           <Link
             to="/"
             className="nav-item"
-            onClick={() => window.location.replace('/#home')}
+            onClick={() => window.location.replace('#top')}
           >
             Home
           </Link>
