@@ -14,9 +14,9 @@ const GalleryDisplay = (props: Props) => {
           src={image}
           alt="scott and alisia engagement"
           className="gallery-image"
-          loading="lazy"
-          width="100%"
-          height="auto"
+          loading={index === 0 || index === 1 ? 'eager' : 'lazy'}
+          width="500"
+          height="500"
         />
       ))}
     </div>
