@@ -18,7 +18,10 @@ const CollapsedNav = ({ setShowCollapsedNav }) => {
           <Link
             to="/"
             className="collapsed-nav-item"
-            onClick={() => setShowCollapsedNav(false)}
+            onClick={() => {
+              setShowCollapsedNav(false)
+              window.location.replace('#top')
+            }}
           >
             Home
           </Link>
@@ -29,7 +32,10 @@ const CollapsedNav = ({ setShowCollapsedNav }) => {
           <Link
             to="/gallery"
             className="collapsed-nav-item"
-            onClick={() => setShowCollapsedNav(false)}
+            onClick={() => {
+              setShowCollapsedNav(false)
+              window.location.replace('#top')
+            }}
           >
             Gallery
           </Link>
