@@ -20,10 +20,10 @@ const RegistrySection = () => {
             className="img"
             src={process.env.PUBLIC_URL + '/ring.webp'}
           />{' '}
+          <div className="middle">
+            <span className="text">View Registry</span>
+          </div>
         </a>
-        <div className="middle">
-          <span className="text">View Registry</span>
-        </div>
         {width < 600 && (
           <span className="small-screen-text">
             Click the image above to view our registry.
