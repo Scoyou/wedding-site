@@ -21,7 +21,11 @@ const Gallery = () => {
       <GalleryDisplay images={listOfImages} />
       <div className="more-images-text">
         <span style={{ float: 'right' }}>
-          <a href="https://www.facebook.com/media/set/?vanity=shennilleshereephotography&set=a.601797878060514">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.facebook.com/media/set/?vanity=shennilleshereephotography&set=a.601797878060514"
+          >
             View full album
           </a>
         </span>
