@@ -95,7 +95,7 @@ input[type='submit']:hover {
   color: rgb(164, 164, 164);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .rsvp-form {
     grid-row: 2;
     grid-column-start: 1;
