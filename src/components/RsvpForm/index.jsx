@@ -15,6 +15,7 @@ const RsvpForm = ({ eventDate }) => {
     name: '',
     email: '',
     additionalGuests: '',
+    notes: '',
   })
 
   const handleNameChange = (event) =>
@@ -25,6 +26,9 @@ const RsvpForm = ({ eventDate }) => {
 
   const handleAdditionalGuestsChange = (event) =>
     setFormState({ ...formState, additionalGuests: event.target.value })
+
+  const handleNotesChange = (event) =>
+    setFormState({ ...formState, notes: event.target.value })
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -45,7 +49,7 @@ const RsvpForm = ({ eventDate }) => {
       setEmailError('Please enter a valid email address')
     }
   }
-
+  console.log(form.current)
   return (
     <div id="rsvp">
       {showModal && (
@@ -84,6 +88,17 @@ const RsvpForm = ({ eventDate }) => {
               id="guests"
               name="guests"
               onChange={handleAdditionalGuestsChange}
+            />
+          </div>
+
+          <div className="float-field">
+            <textarea
+              rows="8"
+              type="text"
+              id="notes"
+              name="notes"
+              placeholder="Additional Notes (optional)"
+              onChange={handleNotesChange}
             />
           </div>
 

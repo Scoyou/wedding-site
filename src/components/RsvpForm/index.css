@@ -10,6 +10,18 @@
   padding: 16px 0 10px;
 }
 
+::placeholder {
+  color: rgb(40, 39, 39);
+}
+
+textarea {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 label {
   position: absolute;
   color: rgb(40, 39, 39);
@@ -27,7 +39,6 @@ select {
   border-radius: 4px;
   box-sizing: border-box;
   height: 3.3rem;
-  font-size: 1.25rem;
 }
 
 input[type='submit'] {
@@ -104,5 +115,6 @@ input[type='submit']:hover {
   #rsvp {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    margin-bottom: 2rem;
   }
 }
