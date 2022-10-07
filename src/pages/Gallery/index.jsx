@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import SectionHeader from '../../components/SectionHeader'
 import GalleryDisplay from '../../components/GalleryDisplay'
 import './index.css'
+import axios from 'axios'
 
 // Exports to use in GalleryDisplay story
 export const importImages = (r) => {
@@ -14,11 +15,24 @@ export const listOfImages = importImages(
 
 const Gallery = () => {
   const EVENT_DATE = new Date(process.env.REACT_APP_EVENT_DATE)
+  const [images, setImages] = useState([])
 
+  useEffect(() => {
+    axios({
+        url: 'https://api.cloudinary.com/v1_1/dd73hevmu/resources/image',
+        method: 'get',
+        headers: {
+          Authorization: 'Basic' + ' ' + process.env.REACT_APP_CLOUDINARY_TOKEN,
+        },
+      })
+      .then((res) => setImages(res.data))
+  }, [])
+
+  console.log(images)
   return (
     <div id="gallery">
       <SectionHeader title="Photo Gallery" />
-      <GalleryDisplay images={listOfImages} />
+      {images && <GalleryDisplay images={images} />}
       <div className="more-images-text">
         <span style={{ float: 'right' }}>
           <a
