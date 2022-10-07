@@ -101,7 +101,11 @@ const RsvpForm = ({ eventDate }) => {
             />
           </div>
 
-          <input type="submit" value="RSVP" disabled={new Date() > eventDate} />
+          <input
+            type="submit"
+            value="SUBMIT"
+            disabled={new Date() > eventDate}
+          />
         </form>
         <div className="side-info">
           <h3>We hope to see you there!</h3>
