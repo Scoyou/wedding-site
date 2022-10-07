@@ -1,17 +1,14 @@
 import React from 'react'
 import './index.css'
-import {AdvancedImage} from '@cloudinary/react';
-import {Cloudinary, CloudinaryImage} from "@cloudinary/url-gen"; 
-
 
 type imageResource = {
   assetId: string
-  bytes : number
+  bytes: number
   createdAt: string
   folder: string
   format: string
   height: number
-  publicId: CloudinaryImage
+  publicId: string
   resourceType: string
   secureUrl: string
   type: string
@@ -25,7 +22,6 @@ type Props = {
 }
 
 const GalleryDisplay = (props: Props) => {
-
   return (
     <div className="gallery-display">
       {props.images.map((image, index) => (
