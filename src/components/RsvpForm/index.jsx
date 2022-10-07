@@ -108,8 +108,8 @@ const RsvpForm = ({ eventDate }) => {
 
           <p className="sub-text">
             We're hoping to make this wedding an enjoyable one for everyone!
-            Please let us know if you need special accommodations, or have any
-            questions for us!
+            Please let us know if you need special accommodations or have any
+            dietary restrictions in the additional notes section of the form.
           </p>
         </div>
       </div>
