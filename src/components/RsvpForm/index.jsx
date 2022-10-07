@@ -111,9 +111,9 @@ const RsvpForm = ({ eventDate }) => {
           <h3>We hope to see you there!</h3>
 
           <p className="sub-text">
-            We're hoping to make this wedding an enjoyable one for everyone!
-            Please let us know if you need special accommodations or have any
-            dietary restrictions in the additional notes section of the form.
+            We want to make this wedding an enjoyable one for everyone! Please
+            let us know if you need special accommodations or have any dietary
+            restrictions in the additional notes section of the form.
           </p>
         </div>
       </div>
