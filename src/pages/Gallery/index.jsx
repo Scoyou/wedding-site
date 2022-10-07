@@ -13,7 +13,7 @@ const Gallery = () => {
       url: 'https://api.cloudinary.com/v1_1/dd73hevmu/resources/image',
       method: 'get',
       headers: {
-        Authorization: 'Basic' + ' ' + process.env.REACT_APP_CLOUDINARY_TOKEN,
+        Authorization: `Basic ${process.env.REACT_APP_CLOUDINARY_TOKEN}`,
       },
     }).then((res) => setImages(res.data))
   }, [])
