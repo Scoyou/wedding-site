@@ -4,15 +4,6 @@ import GalleryDisplay from '../../components/GalleryDisplay'
 import './index.css'
 import axios from 'axios'
 
-// Exports to use in GalleryDisplay story
-export const importImages = (r) => {
-  return r.keys().map(r)
-}
-
-export const listOfImages = importImages(
-  require.context('./images/', false, /\.(png|jpe?g|svg|webp)$/),
-)
-
 const Gallery = () => {
   const EVENT_DATE = new Date(process.env.REACT_APP_EVENT_DATE)
   const [images, setImages] = useState([])
