@@ -49,7 +49,6 @@ const RsvpForm = ({ eventDate }) => {
       setEmailError('Please enter a valid email address')
     }
   }
-  console.log(form.current)
   return (
     <div id="rsvp">
       {showModal && (
