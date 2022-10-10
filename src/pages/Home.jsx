@@ -20,14 +20,17 @@ const Home = () => {
           day: 'numeric',
         })}
         content={
-          new Date() < EVENT_DATE && (
-            <button
-              className="rsvp-button"
-              onClick={() => window.location.replace('/#rsvp')}
-            >
-              RSVP
-            </button>
-          )
+          <>
+            <h3>Morgan, UT</h3>
+            {new Date() < EVENT_DATE && (
+              <button
+                className="rsvp-button"
+                onClick={() => window.location.replace('/#rsvp')}
+              >
+                RSVP
+              </button>
+            )}
+          </>
         }
       />
       <CountdownTimer
