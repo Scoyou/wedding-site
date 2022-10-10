@@ -20,17 +20,10 @@ const Gallery = () => {
       <SectionHeader title="Photo Gallery" />
       <GalleryDisplay images={listOfImages} />
       <div className="more-images-text">
-        <span style={{ float: 'right' }}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.facebook.com/media/set/?vanity=shennilleshereephotography&set=a.601797878060514"
-          >
-            View full album
-          </a>
-        </span>
         <span className="photo-credit">
           Photo Credit: Shennile Sheree Photography{' '}
+        </span>
+        <span>
           <a href="https://www.facebook.com/shennilleshereephotography">
             <img
               src={process.env.PUBLIC_URL + '/facebooklogo.png'}

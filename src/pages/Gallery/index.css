@@ -23,3 +23,13 @@
 .logo-image:hover {
   filter: hue-rotate(90deg);
 }
+
+.view-fb-album {
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .photo-credit {
+    font-size: 0.9rem;
+  }
+}
