@@ -24,7 +24,7 @@ const RegistrySection = () => {
             <span className="text">View Registry</span>
           </div>
         </a>
-        {width < 600 && (
+        {width < 800 && (
           <span className="small-screen-text">
             Click the image above to view our registry.
           </span>
