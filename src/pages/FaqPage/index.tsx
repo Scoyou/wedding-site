@@ -48,7 +48,7 @@ const FaqPage = () => {
       </FaqCard>
       <FaqCard question="Will there be food?" displayAnswer={SHOW_ANSWERS}>
         <p>
-          yes, food will be provided during the reception. The menu is TBD.
+          Yes, food will be provided during the reception. The menu is TBD.
           Please let us know if you have any dietary restrictions in the RSVP
           form.
         </p>

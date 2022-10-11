@@ -15,7 +15,7 @@ const FaqCard = (props: Props) => {
         onClick={() => setShowAnswer(!showAnswer)}
         style={{ cursor: 'pointer' }}
       >
-        {props.question}
+        ○ {props.question}
         <img
           style={{ margin: '10px', float: 'right' }}
           width="20"

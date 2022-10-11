@@ -5,4 +5,5 @@
 .faq-card {
   position: relative;
   background-color: rgb(39, 35, 35);
+  border: 3px solid rgb(31, 30, 30);
 }
