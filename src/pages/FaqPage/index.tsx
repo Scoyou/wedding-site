@@ -36,7 +36,11 @@ const FaqPage = () => {
         </p>
       </FaqCard>
       <FaqCard question="Can I bring a plus one?" displayAnswer={SHOW_ANSWERS}>
-        <p>Yes!</p>
+        <p>
+          Yes! Anyone coming solo is welcome to bring a plus one. Please just
+          let us know who is coming when filling out the RSVP form so we can
+          have an accurate head-count for food.
+        </p>
       </FaqCard>
       <FaqCard question="Will there be alcohol?" displayAnswer={SHOW_ANSWERS}>
         <p>
