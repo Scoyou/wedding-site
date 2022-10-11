@@ -7,7 +7,7 @@ import useWindowDimensions from '../../hooks/useWindowDimensions'
 const FaqPage = () => {
   const { width } = useWindowDimensions()
 
-  const SHOW_ANSWERS = width < 600 ? false : true
+  const SHOW_ANSWERS = width > 600
   return (
     <div id="faq-page">
       <SectionHeader title="Frequently Asked Questions" />
