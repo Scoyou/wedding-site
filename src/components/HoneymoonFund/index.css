@@ -20,6 +20,13 @@
   margin-right: 20rem;
 }
 
+@media only screen and (max-width: 1300px) {
+  .honeymoon-fund {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   .venmo-info {
     grid-template-columns: repeat(1, 1fr);

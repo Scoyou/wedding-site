@@ -4,7 +4,7 @@ import SectionHeader from '../SectionHeader'
 
 const HoneymoonFund = () => {
   return (
-    <div style={{ marginTop: '4rem' }}>
+    <div style={{ marginTop: '4rem', marginLeft: '3rem', marginRight: '3rem' }}>
       <SectionHeader title="Honeymoon Fund Donations" />
       <div className="honeymoon-fund">
         <p className="description">
