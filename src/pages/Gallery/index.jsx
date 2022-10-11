@@ -45,14 +45,12 @@ const Gallery = () => {
             />
           </a>
         </span>
-        {new Date() > EVENT_DATE && (
-          <p>
-            Have images of the wedding you'd like to share?{' '}
-            <a href={`mailto:${process.env.REACT_APP_RSVP_EMAIL}`}>
-              Email them to us!
-            </a>
-          </p>
-        )}
+        <p>
+          Have images of the wedding party you'd like to share?{' '}
+          <a href={`mailto:${process.env.REACT_APP_RSVP_EMAIL}`}>
+            Email them to us!
+          </a>
+        </p>
       </div>
     </div>
   )
