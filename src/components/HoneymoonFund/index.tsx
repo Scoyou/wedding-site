@@ -14,7 +14,7 @@ const HoneymoonFund = () => {
         <div className="venmo-info">
           <div>
             <a
-              href={process.env.REACT_APP_VENMO_LINK}
+              href={process.env.REACT_APP_VENMO_LINK_1}
               target="_blank"
               rel="noreferrer"
             >
@@ -33,7 +33,7 @@ const HoneymoonFund = () => {
           </div>
           <div>
             <a
-              href={process.env.REACT_APP_VENMO_LINK}
+              href={process.env.REACT_APP_VENMO_LINK_2}
               target="_blank"
               rel="noreferrer"
             >

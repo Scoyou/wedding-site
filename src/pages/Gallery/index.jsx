@@ -13,8 +13,6 @@ export const listOfImages = importImages(
 )
 
 const Gallery = () => {
-  const EVENT_DATE = new Date(process.env.REACT_APP_EVENT_DATE)
-
   return (
     <div id="gallery">
       <SectionHeader title="Photo Gallery" />
