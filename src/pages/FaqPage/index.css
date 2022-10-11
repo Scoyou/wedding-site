@@ -1,3 +1,10 @@
 #faq-page {
   margin: 4rem 2rem 2rem 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+  #faq-page {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
