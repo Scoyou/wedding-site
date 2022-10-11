@@ -1,11 +1,8 @@
 import React from 'react'
 import './index.css'
 import SectionHeader from '../SectionHeader'
-import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 const RegistrySection = () => {
-  const { width } = useWindowDimensions()
-
   return (
     <div id="registry">
       <SectionHeader title="Our Registries" />
