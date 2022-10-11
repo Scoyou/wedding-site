@@ -4,8 +4,8 @@ import FaqCard from './index'
 
 describe('Footer', () => {
   const defaults = {
-    question: "Lorem Ipsum Dolar?",
-    displayAnswer: true
+    question: 'Lorem Ipsum Dolar?',
+    displayAnswer: true,
   }
   beforeEach(() => {
     render(
@@ -16,7 +16,9 @@ describe('Footer', () => {
   })
 
   it('renders', () => {
-    expect(screen.getByRole('heading', {name: /Lorem Ipsum Dolar?/})).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: /Lorem Ipsum Dolar?/ }),
+    ).toBeInTheDocument()
   })
 
   it('displays question content when displayAnswer is true', () => {
