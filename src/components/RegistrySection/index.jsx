@@ -8,27 +8,76 @@ const RegistrySection = () => {
 
   return (
     <div id="registry">
-      <SectionHeader title="Our Registry" />
-      <div className="image-container">
-        <a
-          href={process.env.REACT_APP_REGISTRY_HREF}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            alt="Alisia's ring"
-            className="img"
-            src={process.env.PUBLIC_URL + '/ring.webp'}
-          />{' '}
-          <div className="middle">
-            <span className="text">View Registry</span>
-          </div>
-        </a>
-        {width < 800 && (
-          <span className="small-screen-text">
-            Click the image above to view our registry.
-          </span>
-        )}
+      <SectionHeader title="Our Registries" />
+      <div className="registry-info top">
+        <div className="image-container">
+          <h2 className="small-screen-text">For Our Home</h2>
+          <p>Click on the image below to view our wedding registy on Amazon.</p>
+          <a
+            href={process.env.REACT_APP_REGISTRY_HREF}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              alt="Alisia's ring"
+              className="img"
+              src={process.env.PUBLIC_URL + '/ring.webp'}
+              loading="lazy"
+              width="auto"
+              height="600px"
+            />{' '}
+            <div className="middle">
+              <span className="text">Wedding Registry</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div style={{ textAlign: 'center' }}>
+        <h2 className="small-screen-text">Honeymoon Fund Donations</h2>
+        <p>
+          Scan or click on either of the QR codes below to donate to our
+          honeymoon fund.
+        </p>
+      </div>
+      <div className="registry-info">
+        <div className="image-container">
+          <a
+            href={process.env.REACT_APP_VENMO_LINK}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              alt="venmo qr"
+              className="img venmo"
+              src={process.env.PUBLIC_URL + '/venmo.webp'}
+              loading="lazy"
+              width="auto"
+              height="600px"
+            />{' '}
+            <div className="middle">
+              <span className="text">Scott Venmo</span>
+            </div>
+          </a>
+        </div>
+        <div className="image-container">
+          <a
+            href={process.env.REACT_APP_VENMO_LINK}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              alt="venmo qr"
+              className="img venmo"
+              src={process.env.PUBLIC_URL + '/venmo2.webp'}
+              loading="lazy"
+              width="auto"
+              height="600px"
+            />{' '}
+            <div className="middle">
+              <span className="text">Alisia Venmo</span>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   )
