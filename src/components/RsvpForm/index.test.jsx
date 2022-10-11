@@ -12,13 +12,13 @@ describe('RSVP form', () => {
 
   describe('fields', () => {
     it('renders name field', () => {
-      expect(screen.getByLabelText('Name*')).toBeInTheDocument()
+      expect(screen.getByLabelText('Name')).toBeInTheDocument()
     })
     it('renders email field', () => {
-      expect(screen.getByLabelText('Email*')).toBeInTheDocument()
+      expect(screen.getByLabelText('Email')).toBeInTheDocument()
     })
     it('renders guests field', () => {
-      expect(screen.getByLabelText('Guests')).toBeInTheDocument()
+      expect(screen.getByLabelText('Guests - optional')).toBeInTheDocument()
     })
   })
 

@@ -7,5 +7,12 @@ describe('HoneymoonFund', () => {
     render(<HoneymoonFund />)
   })
 
-  it('renders', () => {})
+  it('renders', () => {
+    expect(screen.getByText(/Honeymoon Fund Donations/)).toBeInTheDocument()
+  })
+
+  it('renders both venmo codes', () => {
+    expect(screen.getByAltText('scott venmo qr')).toBeInTheDocument()
+    expect(screen.getByAltText('alisia venmo qr')).toBeInTheDocument()
+  })
 })

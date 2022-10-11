@@ -14,7 +14,7 @@ describe('quote container', () => {
     expect(screen.getByAltText('Shakespeare quote')).toBeInTheDocument()
   })
 
-  it('renders marry me sign picture', () => {
-    expect(screen.getByAltText('Marry me sign')).toBeInTheDocument()
+  it('renders engagement picture', () => {
+    expect(screen.getByAltText('Engagement')).toBeInTheDocument()
   })
 })

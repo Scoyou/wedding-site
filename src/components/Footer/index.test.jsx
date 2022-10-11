@@ -8,8 +8,6 @@ describe('Footer', () => {
   })
 
   it('renders', () => {
-    expect(
-      screen.getByText(/Contact us with any questions/),
-    ).toBeInTheDocument()
+    expect(screen.getByText(/Email us with any questions/)).toBeInTheDocument()
   })
 })

@@ -19,7 +19,7 @@ const HoneymoonFund = () => {
               rel="noreferrer"
             >
               <img
-                alt="venmo qr"
+                alt="scott venmo qr"
                 className="venmo-code"
                 src={process.env.PUBLIC_URL + '/venmo.webp'}
                 loading="lazy"
@@ -38,7 +38,7 @@ const HoneymoonFund = () => {
               rel="noreferrer"
             >
               <img
-                alt="venmo qr"
+                alt="alisia venmo qr"
                 className="venmo-code"
                 src={process.env.PUBLIC_URL + '/venmo2.webp'}
                 loading="lazy"
