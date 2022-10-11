@@ -2,9 +2,12 @@ import React from 'react'
 import './index.css'
 import FaqCard from '../../components/FaqCard'
 import SectionHeader from '../../components/SectionHeader'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
 
 const FaqPage = () => {
-  const SHOW_ANSWERS = true
+  const { width } = useWindowDimensions()
+
+  const SHOW_ANSWERS = width < 600 ? false : true
   return (
     <div id="faq-page">
       <SectionHeader title="Frequently Asked Questions" />
@@ -32,10 +35,7 @@ const FaqPage = () => {
           they must remain outside and supervised at all times.
         </p>
       </FaqCard>
-      <FaqCard
-        question="Am I allowed to bring a plus one?"
-        displayAnswer={SHOW_ANSWERS}
-      >
+      <FaqCard question="Can I bring a plus one?" displayAnswer={SHOW_ANSWERS}>
         <p>Yes!</p>
       </FaqCard>
       <FaqCard question="Will there be alcohol?" displayAnswer={SHOW_ANSWERS}>
