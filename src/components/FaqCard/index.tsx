@@ -20,6 +20,7 @@ const FaqCard = (props: Props) => {
           style={{ margin: '10px', float: 'right' }}
           width="20"
           height="20"
+          alt="expand arrow"
           src={
             showAnswer
               ? process.env.PUBLIC_URL + '/expand-icon-up.png'
