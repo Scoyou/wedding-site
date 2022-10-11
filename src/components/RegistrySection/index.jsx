@@ -8,8 +8,8 @@ const RegistrySection = () => {
       <SectionHeader title="Our Registries" />
       <div className="registry-info top">
         <div className="image-container">
-          <h2 className="small-screen-text">For Our Home</h2>
-          <p>Click on the image below to view our wedding registy on Amazon.</p>
+          <h2 className="registry-description">For Our Home</h2>
+          <p className="registry-description">Click on the image below to view our wedding registy on Amazon.</p>
           <a
             href={process.env.REACT_APP_REGISTRY_HREF}
             target="_blank"
@@ -30,8 +30,8 @@ const RegistrySection = () => {
         </div>
       </div>
       <div style={{ textAlign: 'center' }}>
-        <h2 className="small-screen-text">Honeymoon Fund Donations</h2>
-        <p>
+        <h2 className="registry-description">Honeymoon Fund Donations</h2>
+        <p className="registry-description">
           Scan or click on either of the QR codes below to donate to our
           honeymoon fund.
         </p>
