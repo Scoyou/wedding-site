@@ -27,6 +27,24 @@ const FaqPage = () => {
           event.
         </p>
       </FaqCard>
+      <FaqCard question="How can I RSVP?" displayAnswer={SHOW_ANSWERS}>
+        <p>
+          Filling out the form at the bottom of the home page is the preferred
+          way to RSVP. Doing so will let us know you can make it, as well as
+          send a calendar reminder to the email you use. If you'd rather RSVP
+          another way you can text either Alisia or Scott to let us know you're
+          coming.
+        </p>
+      </FaqCard>
+      <FaqCard
+        question="How soon do I need to RSVP?"
+        displayAnswer={SHOW_ANSWERS}
+      >
+        <p>
+          Please RSVP as soon as you're able so we can get an accurate number of
+          how many people will be there.
+        </p>
+      </FaqCard>
       <FaqCard question="Can I bring my dog?" displayAnswer={SHOW_ANSWERS}>
         <p>
           Dogs are allowed at the venue, but cannot go inside any of the
