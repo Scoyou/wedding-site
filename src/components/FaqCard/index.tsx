@@ -29,7 +29,7 @@ const FaqCard = (props: Props) => {
         />
       </h2>
       <hr />
-      {showAnswer && props.children}
+      {showAnswer && <div className="faq-answer">{props.children}</div>}
     </div>
   )
 }
