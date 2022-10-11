@@ -1,4 +1,6 @@
 .image-container {
+  max-width: 30%;
+  max-height: 30%;
   align-items: center;
   display: block;
   margin-left: auto;
@@ -8,18 +10,12 @@
 }
 
 .img {
-  width: auto;
-  height: 600px;
+  width: 100%;
+  height: auto;
   opacity: 1;
   display: block;
   transition: 0.3s ease;
   backface-visibility: hidden;
-  cursor: pointer;
-}
-
-.img.venmo {
-  height: auto;
-  width: 100%;
 }
 
 .middle {
@@ -57,35 +53,14 @@
   margin-right: 3rem;
 }
 
-.registry-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.registry-info.top {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  margin-bottom: 10px;
-}
-
 @media only screen and (max-width: 600px) {
   .image-container {
     max-width: 100%;
     max-height: 100%;
   }
 
-  .img {
-    width: 100%;
-    height: auto;
-  }
-
   #registry {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-  }
-
-  .registry-info {
-    grid-template-columns: repeat(1, 1fr);
   }
 }

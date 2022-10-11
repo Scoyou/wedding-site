@@ -4,6 +4,7 @@ import CountdownTimer from '../components/CountdownTimer'
 import RsvpForm from '../components/RsvpForm'
 import QuoteContainer from '../components/QuoteContainer'
 import RegistrySection from '../components/RegistrySection'
+import HoneymoonFund from '../components/HoneymoonFund'
 
 const Home = () => {
   const EVENT_DATE = new Date(process.env.REACT_APP_EVENT_DATE)
@@ -41,6 +42,7 @@ const Home = () => {
       />
       <QuoteContainer />
       <RegistrySection />
+      <HoneymoonFund />
       <RsvpForm eventDate={EVENT_DATE} />
     </div>
   )
