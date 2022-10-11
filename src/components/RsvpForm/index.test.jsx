@@ -21,7 +21,9 @@ describe('RSVP form', () => {
       expect(screen.getByLabelText('Guests - optional')).toBeInTheDocument()
     })
     it('renders additional notes field', () => {
-      expect(screen.getByPlaceholderText('Additional Notes - optional')).toBeInTheDocument()
+      expect(
+        screen.getByPlaceholderText('Additional Notes - optional'),
+      ).toBeInTheDocument()
     })
   })
 
