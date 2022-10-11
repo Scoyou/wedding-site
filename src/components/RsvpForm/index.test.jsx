@@ -20,6 +20,9 @@ describe('RSVP form', () => {
     it('renders guests field', () => {
       expect(screen.getByLabelText('Guests - optional')).toBeInTheDocument()
     })
+    it('renders additional notes field', () => {
+      expect(screen.getByPlaceholderText('Additional Notes - optional')).toBeInTheDocument()
+    })
   })
 
   describe('submit button', () => {
