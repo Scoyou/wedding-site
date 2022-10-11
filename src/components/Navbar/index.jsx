@@ -38,6 +38,14 @@ const Navbar = () => {
       ) : (
         <>
           <Link
+            to="/frequently-asked-questions"
+            className="nav-item"
+            onClick={() => window.location.replace('#top')}
+          >
+            FAQ
+          </Link>
+
+          <Link
             to="/gallery"
             className="nav-item"
             onClick={() => window.location.replace('#top')}

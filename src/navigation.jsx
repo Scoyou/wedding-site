@@ -1,6 +1,7 @@
 import Home from './pages/Home'
 import Root from './pages/Root'
 import Gallery from './pages/Gallery'
+import FaqPage from './pages/FaqPage'
 import { createBrowserRouter } from 'react-router-dom'
 
 export const router = createBrowserRouter([
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
       {
         path: '/gallery',
         element: <Gallery />,
+      },
+      {
+        path: '/frequently-asked-questions',
+        element: <FaqPage />,
       },
     ],
   },

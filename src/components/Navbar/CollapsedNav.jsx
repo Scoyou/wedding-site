@@ -40,6 +40,18 @@ const CollapsedNav = ({ setShowCollapsedNav }) => {
             Gallery
           </Link>
         </li>
+        <li>
+          <Link
+            to="/frequently-asked-questions"
+            className="collapsed-nav-item"
+            onClick={() => {
+              setShowCollapsedNav(false)
+              window.location.replace('#top')
+            }}
+          >
+            FAQ
+          </Link>
+        </li>
       </ul>
     </div>
   )

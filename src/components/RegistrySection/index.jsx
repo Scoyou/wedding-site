@@ -9,7 +9,9 @@ const RegistrySection = () => {
       <div className="registry-info top">
         <div className="image-container">
           <h2 className="registry-description">For Our Home</h2>
-          <p className="registry-description">Click on the image below to view our wedding registy on Amazon.</p>
+          <p className="registry-description">
+            Click on the image below to view our wedding registy on Amazon.
+          </p>
           <a
             href={process.env.REACT_APP_REGISTRY_HREF}
             target="_blank"
