@@ -101,7 +101,7 @@
 
   @-moz-document url-prefix() {
     .content {
-      transform: translate(50%, 2%);
+      transform: translate(50%, 2%) scale(0.9);
     }
   }
 }
