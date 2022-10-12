@@ -55,8 +55,8 @@ const FaqPage = () => {
         <p>
           The event will be Bring Your Own Booze. If you plan on bringing
           alcohol please make sure it is labeled with your name so we know whose
-          it is. All alcohol must be checked into the bar and served only by the
-          bar tender on-site.
+          it is. Due to Utah state liquor laws all alcohol must be checked into
+          the bar upon arrival and served only by the bar tender on-site.
         </p>
       </FaqCard>
       <FaqCard question="Will there be food?" displayAnswer={SHOW_ANSWERS}>
