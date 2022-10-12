@@ -96,6 +96,12 @@
   }
 
   .content {
-    transform: translate(50%, 5%);
+    top: 0;
+  }
+
+  @-moz-document url-prefix() {
+    .content {
+      transform: translate(50%, 2%);
+    }
   }
 }
