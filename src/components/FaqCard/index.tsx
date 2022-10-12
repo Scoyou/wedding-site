@@ -11,10 +11,7 @@ const FaqCard = (props: Props) => {
   const [showAnswer, setShowAnswer] = useState(props.displayAnswer)
   return (
     <div className="faq-card">
-      <h2
-        onClick={() => setShowAnswer(!showAnswer)}
-        style={{ cursor: 'pointer' }}
-      >
+      <h2 onClick={() => setShowAnswer(!showAnswer)} className="faq-question">
         ○ {props.question}
         <img
           style={{ margin: '10px', float: 'right' }}
