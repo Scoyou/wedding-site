@@ -36,6 +36,9 @@ const FaqPage = () => {
           coming, or email us at rsvp@scottandalisia.com.
         </p>
       </FaqCard>
+      <FaqCard question="When should I RSVP by?" displayAnswer={SHOW_ANSWERS}>
+        <p>Please RSVP by September 15th, 2023.</p>
+      </FaqCard>
       <FaqCard question="Can I bring my dog?" displayAnswer={SHOW_ANSWERS}>
         <p>
           Dogs are allowed at the venue, but cannot go inside any of the
