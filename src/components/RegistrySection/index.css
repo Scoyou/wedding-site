@@ -43,6 +43,10 @@
   transition: 0.3s ease;
 }
 
+.small-screen-text {
+  color: rgb(164, 164, 164);
+}
+
 .text {
   color: white;
   font-size: 2rem;
