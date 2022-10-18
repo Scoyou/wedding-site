@@ -10,4 +10,8 @@ describe('Footer', () => {
   it('renders', () => {
     expect(screen.getByText(/Email us with any questions/)).toBeInTheDocument()
   })
+
+  it('displays copyright info', () => {
+    expect(screen.getByText(/all rights reserved/)).toBeInTheDocument()
+  })
 })
