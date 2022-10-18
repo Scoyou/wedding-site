@@ -14,8 +14,11 @@ const Footer = () => {
           Shennile Sheree Photography
         </a>{' '}
         and cannot be used, modified, reproduced, or redistributed without the
-        permission of the owner or owners.
-      </p>
+        permission of the owner or owners. <br />{' '}
+        <a href="https://www.disclaimergenerator.net/live.php?token=yrpUXeppTejFL1SCohsclNI1edbHZaDK">
+          Disclaimer for scottandalisia.com
+        </a>
+      </p>{' '}
     </div>
   )
 }
