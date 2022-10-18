@@ -44,7 +44,7 @@
 }
 
 .small-screen-text {
-  color: rgb(164, 164, 164);
+  color: var(--subtext-grey);
 }
 
 .text {
