@@ -7,9 +7,8 @@ const Footer = () => {
       <p>Email us with any questions at {process.env.REACT_APP_RSVP_EMAIL}</p>
       <br />
       <p className="copyright">
-        &copy; Scott Young 2022, all rights reserved. <br />
-        All images used on scottandalisia.com are the property of either
-        scottandalisia.com or{' '}
+        &copy; Scott Young 2022, all rights reserved. All images used on
+        scottandalisia.com are the property of either scottandalisia.com or{' '}
         <a href="https://www.facebook.com/shennilleshereephotography">
           Shennile Sheree Photography
         </a>{' '}
