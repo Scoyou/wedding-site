@@ -3,7 +3,7 @@ import Modal from './index'
 
 const defaults = {
   setShowModal: true,
-  toEmail: 'test@example.com',
+  toEmail: 'test@notanemail.com',
 }
 
 describe('countdown timer', () => {
@@ -18,6 +18,10 @@ describe('countdown timer', () => {
   })
 
   it('shows correct email', () => {
-    expect(screen.getByText(/test@example.com/)).toBeInTheDocument()
+    expect(
+      screen.getByText(
+        `A confirmation email has been sent to ${defaults.toEmail}`,
+      ),
+    ).toBeInTheDocument()
   })
 })
