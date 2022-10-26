@@ -38,6 +38,7 @@
 
 .modal-inner {
   justify-content: center;
+  word-break: break-word;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,6 +47,6 @@
   }
 
   .modal-inner {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
