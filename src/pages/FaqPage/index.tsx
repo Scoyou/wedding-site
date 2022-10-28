@@ -42,9 +42,9 @@ const FaqPage = () => {
       <FaqCard question="Can I bring my dog?" displayAnswer={SHOW_ANSWERS}>
         <p>
           Dogs are allowed at the venue, but cannot go inside any of the
-          buildings or be on any of the patios. It would be best to leave your
-          furry friends at home whenever possible. If you need to bring your dog
-          they must remain outside and supervised at all times.
+          buildings or be on any of the patios. It is strongly recommended you
+          leave your furry friends at home. If you need to bring your dog they
+          must remain outside and supervised at all times.
         </p>
       </FaqCard>
       <FaqCard question="Can I bring a plus one?" displayAnswer={SHOW_ANSWERS}>
@@ -58,8 +58,9 @@ const FaqPage = () => {
         <p>
           The event will be Bring Your Own Booze. If you plan on bringing
           alcohol please make sure it is labeled with your name so we know whose
-          it is. Due to Utah state liquor laws all alcohol must be checked into
-          the bar upon arrival and served only by the bar tender on-site.
+          it is. Due to Utah state liquor laws all alcohol must be checked
+          brought to the bartender upon arrival (you can bring it to our condo),
+          and served only by the bartender on-site.
         </p>
       </FaqCard>
       <FaqCard question="Will there be food?" displayAnswer={SHOW_ANSWERS}>
